@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.bugsbunny.restclient.MLFlowRunClientTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-07-08T13:46:47" hostname="Babys-MacBook-Pro.local" time="0.207">
+  <properties/>
+  <testcase name="testGetExperiments()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.164"/>
+  <testcase name="testCreateExperiment()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.023"/>
+  <testcase name="testCreateRun()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.012"/>
+  <testcase name="testGetRun()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+INFO: ***RESPONSE***
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+INFO: BODY: {
+  "experiments": [
+    {
+      "experiment_id": "0",
+      "name": "Default",
+      "artifact_location": "./mlruns/0",
+      "lifecycle_stage": "active"
+    },
+    {
+      "experiment_id": "1",
+      "name": "AppGal",
+      "artifact_location": "./mlruns/1",
+      "lifecycle_stage": "active"
+    }
+  ]
+}
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+INFO: STATUS: 200
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+INFO: **************
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+INFO: ***RESPONSE***
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+INFO: BODY: {"error_code": "RESOURCE_ALREADY_EXISTS", "message": "Experiment 'AppGal' already exists."}
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+INFO: STATUS: 400
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+INFO: **************
+Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createRun
+INFO: {
+  "run": {
+    "info": {
+      "run_uuid": "8da9f940ed73497c820d01ed4c69176d",
+      "experiment_id": "0",
+      "user_id": "",
+      "status": "RUNNING",
+      "start_time": "1594216007497",
+      "artifact_uri": "./mlruns/0/8da9f940ed73497c820d01ed4c69176d/artifacts",
+      "lifecycle_stage": "active",
+      "run_id": "8da9f940ed73497c820d01ed4c69176d"
+    },
+    "data": {}
+  }
+}
+]]></system-err>
+</testsuite>
