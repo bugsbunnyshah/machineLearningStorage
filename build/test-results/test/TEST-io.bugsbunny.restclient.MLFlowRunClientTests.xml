@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.bugsbunny.restclient.MLFlowRunClientTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-07-08T13:46:47" hostname="Babys-MacBook-Pro.local" time="0.207">
+<testsuite name="io.bugsbunny.restclient.MLFlowRunClientTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-07-09T15:48:13" hostname="Babys-MacBook-Pro.local" time="0.231">
   <properties/>
-  <testcase name="testGetExperiments()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.164"/>
-  <testcase name="testCreateExperiment()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.023"/>
-  <testcase name="testCreateRun()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.012"/>
-  <testcase name="testGetRun()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.007"/>
+  <testcase name="testGetExperiments()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.182"/>
+  <testcase name="testCreateExperiment()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.027"/>
+  <testcase name="testCreateRun()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.013"/>
+  <testcase name="testGetRun()" classname="io.bugsbunny.restclient.MLFlowRunClientTests" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+  <system-err><![CDATA[Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
 INFO: ***RESPONSE***
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
 INFO: BODY: {
   "experiments": [
     {
@@ -25,30 +25,30 @@ INFO: BODY: {
     }
   ]
 }
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
 INFO: STATUS: 200
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient getExperiments
 INFO: **************
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
 INFO: ***RESPONSE***
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
 INFO: BODY: {"error_code": "RESOURCE_ALREADY_EXISTS", "message": "Experiment 'AppGal' already exists."}
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
 INFO: STATUS: 400
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient createExperiment
 INFO: **************
-Jul 08, 2020 8:46:47 AM io.bugsbunny.restclient.MLFlowRunClient createRun
+Jul 09, 2020 10:48:13 AM io.bugsbunny.restclient.MLFlowRunClient createRun
 INFO: {
   "run": {
     "info": {
-      "run_uuid": "8da9f940ed73497c820d01ed4c69176d",
+      "run_uuid": "e71dae75ff814f64bc848c853ca45a35",
       "experiment_id": "0",
       "user_id": "",
       "status": "RUNNING",
-      "start_time": "1594216007497",
-      "artifact_uri": "./mlruns/0/8da9f940ed73497c820d01ed4c69176d/artifacts",
+      "start_time": "1594309693633",
+      "artifact_uri": "./mlruns/0/e71dae75ff814f64bc848c853ca45a35/artifacts",
       "lifecycle_stage": "active",
-      "run_id": "8da9f940ed73497c820d01ed4c69176d"
+      "run_id": "e71dae75ff814f64bc848c853ca45a35"
     },
     "data": {}
   }
